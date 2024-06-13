@@ -4,7 +4,7 @@
 
 ## ♻ 코드 리팩토링
 
-### make_pdf.js
+### 😋 make_pdf.js
 
 <details>
     <summary>💢 리팩토링 전</summary>
@@ -168,7 +168,11 @@ export default makePdf;
 
 </details>
 
-### 리팩토링 내용
+<details>
+    <summary>자세히</summary>
+
 - convertToPdf 함수에서 페이지 너비와 높이를 가져오는 부분을 구조 분해 할당으로 간소화
 - 이미지 비율 계산 및 이미지 크기 조정을 한 줄로 정리
 - if-else 구조를 제거하고 while 루프 하나로 통합. 이미지가 한 페이지에 맞는 경우도 while 루프 내에서 처리되도록 변경
+
+</details>
