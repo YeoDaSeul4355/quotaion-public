@@ -1,0 +1,357 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.container {
+  font-family: "Pretendard";
+  width: 21cm;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+#header {
+  position: relative;
+}
+#header h1 {
+  font-size: 30px;
+  padding: 20px;
+  background-color: #434343;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.info_table {
+  display: flex;
+  justify-content: space-between;
+}
+.info_table p {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999999;
+}
+.info_table > div {
+  width: 49%;
+}
+.info_table > div table {
+  width: 100%;
+}
+.info_table td {
+  padding: 10px 5px;
+  border: 1px solid #000;
+  border-left: 0;
+  border-right: 0;
+}
+.info_table td input {
+  margin-top: -3px;
+  font-size: 14px;
+  height: 20px;
+  width: 100%;
+}
+.info_table .thead {
+  width: 25%;
+  border-right: 1px solid #000;
+  background-color: #efefef;
+  font-weight: bold;
+  font-size: 16px;
+}
+input {
+  border: 0;
+  outline: none;
+  font-family: "Pretendard";
+  font-size: 14px;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #e8e8e8;
+  margin: 20px 0;
+}
+.total .title {
+  text-align: center;
+}
+.total .title p {
+  font-weight: bold;
+  font-size: 18px;
+}
+.total .title span {
+  font-size: 14px;
+}
+.total .totalCount {
+  font-size: 20px;
+  font-weight: bold;
+}
+.product {
+  border: 1px solid #000;
+  margin: 0 auto;
+  width: 21cm;
+  position: relative;
+}
+.product thead {
+  border-bottom: 1px solid #000;
+}
+.product thead th {
+  border-right: 1px solid #000;
+  padding: 5px 0;
+  font-size: 14px;
+}
+.product thead th:last-child {
+  border-right: 0;
+}
+.product tbody {
+  width: 100px;
+}
+.product tbody td {
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+.product tbody td.remove {
+  border-right: 0;
+}
+.product tbody td input {
+  width: 100%;
+  text-align: center;
+  vertical-align: top;
+  height: 30px;
+}
+.pricebg {
+  background-color: #fffbde;
+}
+input {
+  background: transparent;
+}
+.removeBtn {
+  border: 0;
+  background-color: transparent;
+  font-size: 20px;
+  position: absolute;
+  padding: 0 20px;
+  cursor: pointer;
+}
+/* styles.css */
+
+/* styles.css */
+
+table.product th.description1,
+table.product td.description1 {
+  width: 60px; /* Adjust this value as needed */
+}
+
+table.product th.description2,
+table.product td.description2 {
+  width: 250px; /* Adjust this value as needed */
+}
+
+table.product th.description3,
+table.product td.description3 {
+  width: 100px; /* Adjust this value as needed */
+}
+
+table.product th.description4,
+table.product td.description4 {
+  width: 100px; /* Adjust this value as needed */
+}
+
+table.product th.quantity,
+table.product td.quantity {
+  width: 50px; /* Adjust this value as needed */
+}
+
+table.product th.unitPrice,
+table.product td.unitPrice {
+  width: 100px; /* Adjust this value as needed */
+}
+
+table.product th.supplyValue,
+table.product td.supplyValue {
+  width: 100px; /* Adjust this value as needed */
+}
+
+table.product th.vat,
+table.product td.vat {
+  width: 70px; /* Adjust this value as needed */
+}
+.totalLabel {
+  padding: 5px !important;
+}
+.totalVat {
+  border-right: 0 !important;
+  padding: 5px !important;
+  text-align: center;
+  font-size: 14px !important;
+}
+.note {
+  padding: 0 5px !important;
+  vertical-align: middle;
+}
+.noteInput {
+  border-right: 0 !important;
+  padding: 5px !important;
+  font-size: 14px !important;
+}
+textarea {
+  border: 0;
+  resize: none;
+  outline: none;
+  font-family: "Pretendard";
+  width: 100%;
+  background-color: transparent;
+}
+.gray {
+  background-color: #e8e8e8;
+}
+.addBtn {
+  position: absolute;
+  left: -30px;
+  top: 0;
+  border: 0;
+  background-color: #4545fa;
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+.pdfBtn {
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  border: 0;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
